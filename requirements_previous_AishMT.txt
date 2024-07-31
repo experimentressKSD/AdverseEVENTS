@@ -1,0 +1,11 @@
+keras-nlp==0.8.2
+keras-tcn==3.5.0
+tensorflow==2.15.0.post1
+tensorflow-text==2.15.0
+pandas
+joblib
+pyyaml
+torch
+scipy
+scikit-learn
+matplotlib

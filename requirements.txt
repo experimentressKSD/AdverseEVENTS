@@ -1,0 +1,11 @@
+keras-nlp
+keras-tcn
+tensorflow
+tensorflow-text
+pandas
+joblib
+pyyaml
+torch
+scipy
+scikit-learn
+matplotlib
