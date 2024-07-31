@@ -1,0 +1,33 @@
+dataset: "eicu" # all: ['mimic', 'eicu']
+
+
+data_paths_mimic:
+  out_path: '/datasets/amelatur/whole_sequences/'
+  vitals_path: '/datasets/amelatur/mimic_kih7jlb3/'
+  labs_path: '/datasets/amelatur/mimic_m1pz92hj/'
+
+data_paths_eicu:
+  out_path: 'C:\Users\dhemank\Documents\AI_Health\Adverse_Event_Detection\datasets\eicu_out'
+  vitals_path: 'C:\Users\dhemank\Documents\AI_Health\Adverse_Event_Detection\datasets\eicu_7aakef5l'
+  labels_path: 'C:\Users\dhemank\Documents\AI_Health\Adverse_Event_Detection\datasets\eicu_labels'
+
+model: 'transformer' #all: ['LSTM', 'TCN', 'LSTM_enc_dec', 'transformer']
+
+
+labelling_mimic: 
+  generate_labels: False
+  disease: 'circulatory'
+  before_onset_positive: 6
+  after_onset_positive: 24
+  end_pos_seq_after_onset: True
+  adjust_neg_seq_length: True
+
+labelling_eicu:
+  generate_labels: False
+  disease: 'kidney'
+  vitals_type: 'all' # all: ['central', 'no_bp', 'all']
+  before_onset_positive: 6
+  after_onset_positive: 24
+  end_pos_seq_after_onset: True
+  adjust_neg_seq_length: True
+

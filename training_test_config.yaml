@@ -1,0 +1,19 @@
+data_paths:
+  out_path: '/datasets/amelatur/data_slices/'
+  vitals_path: '/datasets/amelatur/mimic_kih7jlb3/'
+  labs_path: '/datasets/amelatur/mimic_m1pz92hj/'
+
+labelling: False
+
+training:
+  whole_sequence_training: False
+  diseases: ['respiratory_HiRID'] # all: ['respiratory_HiRID', 'respiratory_NEJM', 'circulatory', 'sepsis', 'kidney']
+  model: 'LSTM_attn' # all: ['1DConv', 'TCN', 'attention', 'LSTM', 'baseline', 'LSTM_enc_dec', 'LSTM_attn']
+  class_balance: 0.5 # fraction of positive windows
+
+test:
+  diseases: ['kidney'] # all: ['respiratory_HiRID', 'respiratory_NEJM', 'circulatory', 'sepsis', 'kidney']
+  model: 'LSTM_attn' # all: ['1DConv', 'TCN', 'attention', 'LSTM', 'baseline', 'LSTM_enc_dec', 'LSTM_attn']
+  class_balance: 0.5 # fraction of positive windows
+  wandb_run_name: 'amber-flower-165'
+

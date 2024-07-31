@@ -1,0 +1,38 @@
+data_paths:
+  labs_path: '/datasets/amelatur/mimic_m1pz92hj/'
+  vitals_path: '/datasets/amelatur/mimic_kih7jlb3/'
+
+respiratory:
+  sampling_rate_minutes: 30
+
+  ffill_p_f_hours: 2
+  pao2_normal: 80.0
+  fio2_normal: 21.0
+
+  p_f_ratio_threshold: 300
+  window_ratio: 0.5
+  window_length_hrs: 2
+
+  peep_interpolate_limit_hours: 4
+
+  paco2_normal: 40
+  paco2_threshold: 45
+  ph_normal: 7.4
+  ph_threshold: 7.35
+
+circulatory:
+  sampling_rate_minutes: 30
+
+  ffill_lactate_hours: 7
+  ffill_drugs_hours: 1
+  ffill_map_hours: 5
+
+  lactate_normal_value: 1.0
+  map_normal_value: 90.0
+
+  lactate_threshold: 2
+  map_threshold: 65
+  window_ratio: 0.66
+  window_length: 2
+  hr_normal_value: 80
+  hr_threshold: 100
